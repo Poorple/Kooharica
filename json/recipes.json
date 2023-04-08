@@ -1,0 +1,629 @@
+[
+    {
+        "name": "Crock Pot Roast",
+        "ingredients": [
+            {
+                "quantity": "4 lbs",
+                "name": " beef roast",
+                "type": "Meat"
+            },
+            {
+                "quantity": "1 package",
+                "name": "brown gravy mix",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1 package",
+                "name": "dried Italian salad dressing mix",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "1 package",
+                "name": "dry ranch dressing mix",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "1/2 cup",
+                "name": "water",
+                "type": "Drinks"
+            }
+        ],
+        "steps": [
+            "Place beef roast in crock pot.",
+            "Mix the dried mixes together in a bowl and sprinkle over the roast.",
+            "Pour the water around the roast.",
+            "Cook on low for 7-9 hours."
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            420
+        ],
+        "imageURL": "https://i0.wp.com/fitslowcookerqueen.com/wp-content/uploads/2019/07/5-Ingredient-Slow-Cooker-Pot-Roast-VIDEO-1-scaled.jpg?fit=2560%2C2560&ssl=1",
+        "originalURL": "http://www.food.com/recipe/to-die-for-crock-pot-roast-27208"
+    },
+    {
+        "name": "Roasted Asparagus",
+        "ingredients": [
+            {
+                "quantity": "1 lb",
+                "name": " asparagus",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1 1/2 tbsp",
+                "name": "olive oil",
+                "type": "Condiments"
+            },
+            {
+                "quantity": "1/2 tsp",
+                "name": "kosher salt",
+                "type": "Baking"
+            }
+        ],
+        "steps": [
+            "Preheat oven to 425°F.",
+            "Cut off the woody bottom part of the asparagus spears and discard.",
+            "With a vegetable peeler, peel off the skin on the bottom 2-3 inches of the spears (this keeps the asparagus from being all.\",string.\", and if you eat asparagus you know what I mean by that).",
+            "Place asparagus on foil-lined baking sheet and drizzle with olive oil.",
+            "Sprinkle with salt.",
+            "With your hands, roll the asparagus around until they are evenly coated with oil and salt.",
+            "Roast for 10-15 minutes, depending on the thickness of your stalks and how tender you like them.",
+            "They should be tender when pierced with the tip of a knife.",
+            "The tips of the spears will get very brown but watch them to prevent burning.",
+            "They are great plain, but sometimes I serve them with a light vinaigrette if we need something acidic to balance out our meal."
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10,
+            0,
+            0,
+            0
+        ],
+        "imageURL": "https://www.onceuponachef.com/images/2022/04/roasted-asparagus-scaled.jpg",
+        "originalURL": "http://www.food.com/recipe/roasted-asparagus-50847"
+    },
+    {
+        "name": "Big Night Pizza",
+        "ingredients": [
+            {
+                "quantity": "5 teaspoons",
+                "name": "yeast",
+                "type": "Baking"
+            },
+            {
+                "quantity": "5 cups",
+                "name": "flour",
+                "type": "Baking"
+            },
+            {
+                "quantity": "4 tablespoons",
+                "name": "vegetable oil",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2 tablespoons",
+                "name": "sugar",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2 teaspoons",
+                "name": "salt",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2 cups",
+                "name": "hot water",
+                "type": "Misc"
+            },
+            {
+                "quantity": "1/4 cup",
+                "name": "pizza sauce",
+                "type": "Misc"
+            },
+            {
+                "quantity": "3/4 cup",
+                "name": "mozzarella cheese",
+                "type": "Dairy"
+            }
+        ],
+        "steps": [
+            "Add hot water to yeast in a large bowl and let sit for 15 minutes.",
+            "Mix in oil, sugar, salt, and flour and let sit for 1 hour.",
+            "Knead the dough and spread onto a pan.",
+            "Spread pizza sauce and sprinkle cheese.",
+            "Add any optional toppings as you wish.",
+            "Bake at 400 deg Fahrenheit for 15 minutes.",
+            "Enjoy!"
+        ],
+        "timers": [
+            15,
+            60,
+            0,
+            0,
+            0,
+            15,
+            0
+        ],
+        "imageURL": "https://www.foodandwine.com/thmb/3kzG4PWOAgZIIfZwMBLKqoTkaGQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/margherita-pizza-with-argula-and-prosciutto-FT-RECIPE0721-04368ec288a84d2e997573aca0001d98.jpg"
+    },
+    {
+        "name": "Cranberry and Apple Stuffed Acorn Squash Recipe",
+        "ingredients": [
+            {
+                "quantity": "2",
+                "name": "acorn squash",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1",
+                "name": "boiling water",
+                "type": "Drinks"
+            },
+            {
+                "quantity": "2",
+                "name": "apples chopped into 1.4 inch pieces",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1/2 cup",
+                "name": "dried cranberries",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1 teaspoon",
+                "name": "cinnamon",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2 tablespoons",
+                "name": "melted butter",
+                "type": "Dairy"
+            }
+        ],
+        "steps": [
+            "Cut squash in half, remove seeds.",
+            "Place squash in baking dish, cut-side down.",
+            "Pour 1/4-inch water into dish.",
+            "Bake for 30 minutes at 350 degrees F.",
+            "In large bowl, combine remaining ingredients.",
+            "Remove squash from oven, fill with mix.",
+            "Bake for 30-40 more minutes, until squash tender.",
+            "Enjoy!"
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            30,
+            0,
+            0,
+            30,
+            0
+        ],
+        "imageURL": "http://elanaspantry.com/wp-content/uploads/2008/10/acorn_squash_with_cranberry.jpg",
+        "originalURL": ""
+    },
+    {
+        "name": "Mic's Yorkshire Puds",
+        "ingredients": [
+            {
+                "quantity": "200g",
+                "name": "plain flour",
+                "type": "Baking"
+            },
+            {
+                "quantity": "3",
+                "name": "eggs",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "300ml",
+                "name": "milk",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "3 tbsp",
+                "name": "vegetable oil",
+                "type": "Condiments"
+            }
+        ],
+        "steps": [
+            "Put the flour and some seasoning into a large bowl.",
+            "Stir in eggs, one at a time.",
+            "Whisk in milk until you have a smooth batter.",
+            "Chill in the fridge for at least 30 minutes.",
+            "Heat oven to 220C/gas mark 7.",
+            "Pour the oil into the holes of a 8-hole muffin tin.",
+            "Heat tin in the oven for 5 minutes.",
+            "Ladle the batter mix into the tin.",
+            "Bake for 30 minutes until well browned and risen."
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            30,
+            0,
+            0,
+            5,
+            0,
+            30
+        ],
+        "imageURL": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg",
+        "originalURL": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg"
+    },
+    {
+        "name": "Old-Fashioned Oatmeal Cookies",
+        "ingredients": [
+            {
+                "quantity": "1 cup",
+                "name": "raisins",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1",
+                "name": "cup water",
+                "type": "Drinks"
+            },
+            {
+                "quantity": "3/4 cup",
+                "name": "shortening",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1 1/2 cups",
+                "name": "sugar",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2 1/2 cups",
+                "name": "flour",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1 tsp.",
+                "name": "soda",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1 tsp.",
+                "name": "salt",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1 tsp.",
+                "name": "cinnamon",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1/2 tsp.",
+                "name": "baking powder",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1/2 tsp.",
+                "name": "cloves",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2 cups",
+                "name": "oats",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1/2 cup",
+                "name": "chopped nuts",
+                "type": "Baking"
+            }
+        ],
+        "steps": [
+            "Simmer raisins and water over medium heat until raisins are plump, about 15 minutes.",
+            "Drain raisins, reserving the liquid.",
+            "Add enough water to reserved liquid to measure 1/2 cup.",
+            "Heat oven to 400°.",
+            "Mix thoroughly shortening, sugar, eggs and vanilla.",
+            "Stir in reserved liquid.",
+            "Blend in remaining ingredients.",
+            "Drop dough by rounded teaspoonfuls about 2 inches apart onto ungreased baking sheet.",
+            "Bake 8 to 10 minutes or until light brown.",
+            "About 6 1/2 dozen cookies."
+        ],
+        "timers": [
+            15,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            0
+        ],
+        "imageURL": "http://s3.amazonaws.com/gmi-digital-library/65caecf7-a8f7-4a09-8513-2659cf92871e.jpg",
+        "originalURL": "#"
+    },
+    {
+        "name": "Blueberry Oatmeal Squares",
+        "ingredients": [
+            {
+                "quantity": "2-1/2 cups",
+                "name": "rolled oats, (not instant)",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1-1/4 cups",
+                "name": "all-purpose flour",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1 tbsp",
+                "name": "grated lemon rind",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1/4 tsp",
+                "name": "salt",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1 cup",
+                "name": "cold butter, cubed",
+                "type": "Baking"
+            },
+            {
+                "quantity": "3/4 cup",
+                "name": "packed brown sugar",
+                "type": "Baking"
+            },
+            {
+                "quantity": "3 cups",
+                "name": "fresh blueberries",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1/2 cup",
+                "name": "granulated sugar",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1/3 cup",
+                "name": "lemon juice",
+                "type": "Produce"
+            },
+            {
+                "quantity": "4 tsp",
+                "name": "cornstarch",
+                "type": "Baking"
+            }
+        ],
+        "steps": [
+            "Filling: In saucepan, bring blueberries, sugar and lemon juice to boil; reduce heat and simmer until tender, about 10 minutes.",
+            "Whisk cornstarch with 2 tbsp (25 mL) water; whisk into blueberries and boil, stirring, until thickened, about 1 minute.",
+            "Place plastic wrap directly on surface; refrigerate until cooled, about 1 hour.",
+            "In large bowl, whisk together oats, flour, sugar, lemon rind and salt ; with pastry blender, cut in butter until in coarse crumbs.",
+            "Press half into 8-inch (2 L) square parchment paper–lined metal cake pan; spread with blueberry filling.",
+            "Bake in centre of 350°F oven until light golden, about 45 minutes.",
+            "Let cool on rack before cutting into squares.",
+            "(Make-ahead: Cover and refrigerate for up to 2 days or overwrap with heavy-duty foil and freeze for up to 2 weeks.)"
+        ],
+        "timers": [
+            10,
+            1,
+            60,
+            0,
+            0,
+            45,
+            0,
+            0
+        ],
+        "imageURL": "https://foodal.com/wp-content/uploads/2022/06/Blueberry-Oatmeal-Squares.jpg",
+        "originalURL": "http://www.canadianliving.com/food/blueberry_oatmeal_squares.php"
+    },
+    {
+        "name": "Curried chicken salad",
+        "ingredients": [
+            {
+                "quantity": "3",
+                "name": "skinless, boneless chicken breasts, halved lengthwise",
+                "type": "Meat"
+            },
+            {
+                "quantity": "1/2 cup",
+                "name": "mayonnaise",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1 tbsp",
+                "name": "lemon zest",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1 tbsp ",
+                "name": "lemon juice",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1 1/2 tsp",
+                "name": "curry powder",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1/4 tsp",
+                "name": "salt",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2",
+                "name": "ripe mangoes, diced",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1/4 cup",
+                "name": "dried cranberries",
+                "type": "Produce"
+            },
+            {
+                "quantity": "2",
+                "name": "green onions, thinly sliced",
+                "type": "Produce"
+            },
+            {
+                "quantity": "1",
+                "name": "celery stalk, finely chopped",
+                "type": "Produce"
+            },
+            {
+                "quantity": "6 leaves",
+                "name": "Boston lettuce",
+                "type": "Produce"
+            },
+            {
+                "quantity": "6",
+                "name": "English muffins, toasted",
+                "type": "Misc"
+            }
+        ],
+        "steps": [
+            "ARRANGE chicken in a single layer in a large pot.",
+            "Add water to just cover.",
+            "Bring to a boil over medium-high.",
+            "Flip chicken, reduce heat to medium and simmer until cooked, about 6 more min.",
+            "Cool.",
+            "STIR mayo with lemon zest, juice, curry and salt in large bowl.",
+            "Using 2 forks, shred chicken, then stir into mayo mixture with mango, cranberries, green onions and celery.",
+            "Divide among muffins with lettuce leaves",
+            "Sandwich with tops"
+        ],
+        "timers": [
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "imageURL": "http://www.chatelaine.com/wp-content/uploads/2013/05/Curried-chicken-salad.jpg",
+        "originalURL": "http://www.chatelaine.com/recipe/stovetop-cooking-method/curried-chicken-salad/"
+    },
+    {
+        "name": "Cinnamon rolls",
+        "ingredients": [
+            {
+                "quantity": "2 cups",
+                "name": "warm milk",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "1/2 cup",
+                "name": "sugar",
+                "type": "Baking"
+            },
+            {
+                "quantity": "8 tbsp",
+                "name": "unsalted butter, melted",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "2 1/4 tsp ",
+                "name": "active dry yeast",
+                "type": "Baking"
+            },
+            {
+                "quantity": "5 cups",
+                "name": "all-purpose flour",
+                "type": "Baking"
+            },
+            {
+                "quantity": "2 tsp",
+                "name": "salt",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "baking powder",
+                "type": "Baking"
+            },
+            {
+                "quantity": "3/4 cup",
+                "name": "light brown sugar",
+                "type": "Baking"
+            },
+            {
+                "quantity": "12 tbsp",
+                "name": "butter, softened",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1 tbsp",
+                "name": "ground cinnamon",
+                "type": "Baking"
+            },
+            {
+                "quantity": "4 oz",
+                "name": "cream cheese",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "2 tbsp",
+                "name": "unsalted butter, melted",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "1 tbsp",
+                "name": "milk",
+                "type": "Dairy"
+            },
+            {
+                "quantity": "1 tsp",
+                "name": "vanilla extract",
+                "type": "Baking"
+            },
+            {
+                "quantity": "1 cup",
+                "name": "powdered sugar",
+                "type": "Baking"
+            }
+        ],
+        "steps": [
+            "Make the dough: In a large bowl, whisk together the warm milk, sugar, and melted butter. The mixture should be just warm, registering between 100-110˚F (37-43˚C). If any warmer, allow to cool slightly.",
+            "Sprinkle the yeast evenly over the milk mixture, stir, and let sit in a warm place for about 10 minutes until the yeast has bloomed.",
+            "Add 4 cups (500 g) of flour to the milk mixture and stir with a wooden spoon until just combined.",
+            "Cover the bowl with a kitchen towel or plastic wrap and let rise in a warm place for 1 hour, until nearly doubled in size.",
+            "Generously butter 2 9-inch (23 cm) round baking pans and set aside.",
+            "Make the filling: In a medium bowl, combine the brown sugar, butter, and cinnamon. Mix well, then set aside.",
+            "Remove the plastic wrap from the dough and add the remaining cup of flour, baking powder, and salt. Stir well, then turn out onto a clean surface. Leave a bit of flour nearby to use as needed, but try not to incorporate too much.",
+            "Knead the dough for at least 10 minutes, adding more flour as necessary, until the dough just loses its stickiness and does not stick to the surface or your hands. The dough should be very smooth and spring back when poked.",
+            "Roll the dough out into a large rectangle, about ½-inch (1 cm) thick. Fix the corners with a bench scraper or a spatula to make sure they are sharp and even.",
+            "Spread the filling evenly over the dough.",
+            "Starting from one short end, roll up the dough into a log and pinch the seam closed. Place seam-side down. Trim any uneven ends.",
+            "Using unflavored dental floss, cut the log into evenly pieces, about 1½ inches (8cm) thick. Place the cinnamon rolls in the prepared pans, 1 in the center and about 5 around the sides. Cover with a towel and let rise in a warm place for 35-45 minutes, until expanded by about half of their original volume. If you’re saving the cinnamon rolls for later, cover with plastic wrap and freeze for up 3 months.",
+            "Preheat the oven to 350˚F (180˚C).",
+            "Bake the cinnamon rolls for 25-30 minutes, until golden brown.",
+            "While the cinnamon rolls are baking, make the frosting: In a medium bowl, whisk together the cream cheese, melted butter, milk, and vanilla extract until smooth. Gradually add the powdered sugar and whisk until homogenous and runny.",
+            "When the cinnamon rolls are finished, let cool for about 10 minutes.",
+            "Drizzle the frosting over the cinnamon rolls, using the back of a spoon to spread if desired."
+
+
+        ],
+        "timers": [
+            25,
+            10,
+            10,
+            45,
+            30,
+            10
+        ],
+        "imageURL": "../images/cr3.jpg"
+    }
+]

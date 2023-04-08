@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "EastMarket";
+    src: url(/fonts/east-market/EastMarket.woff) format(woff);
+    font-weight:100;
+    font-style:normal;
+}
+@font-face {
+  font-family: "CabinSketch";
+  src: url(/fonts/cabinsketch/cabinsketch-regular-webfont.woff2) format(woff2);
+  src: url(/fonts/cabinsketch/cabinsketch-bold-webfont.woff2) format(woff2);
+}
+html, body {
+    margin: 0;
+    height: 100%;
+  }
+  * {
+    box-sizing: border-box;
+    
+  }
+
+  .wrap{
+    a{
+        color:#000040;
+        text-decoration: none;
+    }
+    ul{
+        display:flex;
+        gap:0.625%;
+    }
+    font-family: "EastMarket", sans-serif;
+    display:flex;
+    position:relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.125rem;
+    padding: 1em;
+    z-index: 99999;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+    overflow: hidden;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 2rem;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: black;
+    position: absolute;
+    height: 0.25rem;
+    width: 2rem;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -0.5rem;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 0.5rem;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0rem;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgb(255, 255, 255);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0rem;
+    transform: rotate(-405deg);
+  }
+  
+  @media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 3.125rem;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border-top:1px solid black;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: black;
+      background-color: white;
+    }
+    .menu > li:is(:last-child) {
+    border-bottom: 1px solid black;
+  }
+    
+  }
