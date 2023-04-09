@@ -63,7 +63,7 @@
   // Styling
   
   section {
-      background: #F4F4F4;
+      background-color: #F4F4F4;
       padding: 50px 0;
   }
   
@@ -71,7 +71,7 @@
       max-width: 1044px;
       margin: 0 auto;
       padding: 0 20px;
-      background-color: white;
+      position: relative;
   }
   
   .carousel {
@@ -129,8 +129,13 @@
       white-space: normal;
       
       figure {
-          display: flex;
+          display: grid;
+          grid-template-columns: 4fr 1fr;
           margin: 0;
+          background-color: white;
+          border-top-left-radius: 2rem;
+          border-top-right-radius: 2rem;
+          overflow: hidden;
       }
       
       div {

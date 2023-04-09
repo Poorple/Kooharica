@@ -1,32 +1,31 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let dataArray=[];
+const carouselArray=[];
+     
+async function getResponse(){
+  try{
+    const response=await fetch("/json/recipes.json");
+    if(!response.ok){
+      throw new Error(`Error:${response.status}`);
+    }
+    const data=await response.json();
+    return data;
+  }  
+  catch(error){
+    console.error("Could not get products!")
+  }
+};
+const promise=getResponse();
+promise.then((data)=>console.log(data));
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length){
-    slideIndex = 1;
+async function randomCarouselNumberGen(){
+  await promise;
+  const rndNum=Math.floor(Math.random()*data.length-1);
+  console.log(rndNum);
+  if(!carouselArray.includes(rndNum)){
+    carouselArray.push(rndNum);
+    }
   }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
+      
+randomCarouselNumberGen();
+   
+console.log(dataArray);  

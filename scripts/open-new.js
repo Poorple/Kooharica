@@ -1,7 +1,7 @@
 const secT = document.querySelector('.cal');
 
-let rnd=sessionStorage.getItem("key");
-console.log(rnd);
+let sessionKey=sessionStorage.getItem("key");
+console.log(sessionKey);
 
 const fetchJSONinstructions=fetch("/json/recipes.json");
 fetchJSONinstructions
@@ -13,7 +13,7 @@ fetchJSONinstructions
     })
     .then((data)=>{
         data.forEach(post=>{
-            if(post.name==rnd){
+            if(post.name==sessionKey){
                 const myArticle = document.createElement('article');
                 const sectInstructions=document.createElement("section");
 
@@ -35,7 +35,6 @@ fetchJSONinstructions
                     stepsliElem.textContent=post.steps[i];
                     mySteps.appendChild(stepsliElem);
                 }
-                console.log(post.steps);
                 myH2.textContent=post.name;
                 myH3a.textContent="Ingredients";
                 myH3b.textContent="Preparation";

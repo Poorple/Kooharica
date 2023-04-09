@@ -1,7 +1,7 @@
 .cal {
   padding: 1.5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
   margin: 0 auto;
   text-align: center;
@@ -12,9 +12,8 @@
 }
 
 article {
-  border: 1px solid black;
   border-radius: 20px;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  box-shadow: rgba(17, 17, 26, 0.2) 0px 1px 0px, rgba(17, 17, 26, 0.2) 0px 0px 8px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -37,8 +36,7 @@ article a {
     height: auto;
   }
   article {
-    border: 1px solid black;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    box-shadow: rgba(17, 17, 26, 0.2) 0px 1px 0px, rgba(17, 17, 26, 0.2) 0px 0px 8px;
   }
 }
 @media (max-height: 800px) {
