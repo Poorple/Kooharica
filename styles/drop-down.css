@@ -14,10 +14,6 @@ html, body {
   height: 100%;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .wrap {
   font-family: "EastMarket", sans-serif;
   display: flex;

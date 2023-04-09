@@ -15,17 +15,30 @@ async function getResponse(){
   }
 };
 const promise=getResponse();
-promise.then((data)=>console.log(data));
+promise.then((data)=>{
+    for(let i=0;i<=data.length-1;i++){
+    dataArray.push(data[i]);
+    }}
+  ) 
 
 async function randomCarouselNumberGen(){
   await promise;
-  const rndNum=Math.floor(Math.random()*data.length-1);
-  console.log(rndNum);
-  if(!carouselArray.includes(rndNum)){
+  if(carouselArray.length<=5){
+    const rndNum=Math.floor(Math.random()*dataArray.length);
+    if(!carouselArray.includes(rndNum)&&rndNum>=0){
     carouselArray.push(rndNum);
     }
-  }
-      
+    randomCarouselNumberGen();
+    }
+  }     
 randomCarouselNumberGen();
    
 console.log(dataArray);  
+console.log(carouselArray);  
+
+
+/* Randomizing carousel items */
+
+  for(let i=1;i<=6;i++){
+    const slideSelector=document.querySelector()
+  }
