@@ -31,106 +31,23 @@
         <img class="first-img" src="images/main-page-1st.jpg">
         </div>
         <!--CAROUSEL-->
-        <section class="carousel-section">
-          <div class="container">
-              <div class="carousel">
-                  <input type="radio" name="slides" checked="checked" id="slide-1">
-                  <input type="radio" name="slides" id="slide-2">
-                  <input type="radio" name="slides" id="slide-3">
-                  <input type="radio" name="slides" id="slide-4">
-                  <input type="radio" name="slides" id="slide-5">
-                  <input type="radio" name="slides" id="slide-6">
-                  <ul class="carousel__slides">
-                      <li class="carousel__slide">
-                          <figure>
-                              <div>
-                                  <img class="main-car-img " src="https://picsum.photos/id/1041/800/450" alt="">
-                              </div>
-                              <figcaption>
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                  <span class="credit">Photo: Tim Marshall</span>
-                              </figcaption>
-                          </figure>
-                      </li>
-                      <li class="carousel__slide">
-                          <figure>
-                              <div>
-                                  <img src="https://picsum.photos/id/1043/800/450" alt="">
-                              </div>
-                              <figcaption>
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                  <span class="credit">Photo: Christian Joudrey</span>                            
-                              </figcaption>
-                          </figure>
-                      </li>
-                      <li class="carousel__slide">
-                          <figure>
-                              <div>
-                                  <img src="https://picsum.photos/id/1044/800/450" alt="">
-                              </div>
-                              <figcaption>
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                  <span class="credit">Photo: Steve Carter</span>                            
-                              </figcaption>
-                          </figure>
-                      </li>
-                      <li class="carousel__slide">
-                          <figure>
-                              <div>
-                                  <img src="https://picsum.photos/id/1045/800/450" alt="">
-                              </div>
-                              <figcaption>
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                  <span class="credit">Photo: Aleksandra Boguslawska</span>                            
-                              </figcaption>
-                          </figure>
-                      </li>
-                      <li class="carousel__slide">
-                          <figure>
-                              <div>
-                                  <img src="https://picsum.photos/id/1049/800/450" alt="">
-                              </div>
-                              <figcaption>
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                  <span class="credit">Photo: Rosan Harmens</span>                            
-                              </figcaption>
-                          </figure>
-                      </li>
-                      <li class="carousel__slide">
-                          <figure>
-                              <div>
-                                  <img src="https://picsum.photos/id/1052/800/450" alt="">
-                              </div>
-                              <figcaption>
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                  <span class="credit">Photo: Annie Spratt</span>                            
-                              </figcaption>
-                          </figure>
-                      </li>
-                  </ul>    
-                  <ul class="carousel__thumbnails">
-                      <li>
-                          <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
-                      </li>
-                      <li>
-                          <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
-                      </li>
-                      <li>
-                          <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
-                      </li>
-                      <li>
-                          <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
-                      </li>
-                      <li>
-                          <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
-                      </li>
-                      <li>
-                          <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </section>
+        <section aria-label="Newest Photos">
+            <div class="carousel" data-carousel>
+              <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+              <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+              <ul data-slides>
+                <li class="slide" data-active>
+                  <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #1">
+                </li>
+                <li class="slide">
+                  <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
+                </li>
+                <li class="slide">
+                  <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
+                </li>
+              </ul>
+            </div>
+          </section>
        <script src="/scripts/main.js"></script>
     </body>
 </html>

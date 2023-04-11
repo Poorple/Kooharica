@@ -9,14 +9,7 @@
 .first{
     padding-left: 10rem;
     padding-top:5rem;
-    }
-    .welcome-sect{
-        height:5rem;
-        width: 25rem;
-        text-align: center;
-        align-items: center;
-        position: relative;
-    }
+}
 .wrap{
     a{
         color:white;
@@ -32,181 +25,77 @@
       color:#000040;
     }
   }
-.welcome-sect{
-    font-family: "CabinSketch";
-    background-color: white;
-    opacity: 0.8;
-    position: relative;
-    border-radius: 25px;
-}
-@mixin aspect-ratio($width, $height) {
-    position: relative;
-      
-    &:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: ($height / $width) * 100%;
-    }
-      
-    > img {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          width: 100%;
-          height: 100%;
-    }
+  *, *::before, *::after {
+    box-sizing: border-box;
   }
   
-  // Styling
-  
-  section {
-      background-color: #F4F4F4;
-      padding: 50px 0;
-  }
-  
-  .container {
-      max-width: 1044px;
-      margin: 0 auto;
-      padding: 0 20px;
-      position: relative;
+  body {
+    margin: 0;
   }
   
   .carousel {
-      display: block;
-      text-align: left;
-      position: relative;
-      margin-bottom: 22px;
-      
-      > input {
-          clip: rect(1px, 1px, 1px, 1px);
-          clip-path: inset(50%);
-          height: 1px;
-          width: 1px;
-          margin: -1px;
-          overflow: hidden;
-          padding: 0;
-          position: absolute;
-          
-          &:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -500%; }
-          &:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -400%; }
-          &:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -300%; }
-          &:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -200%; }
-          &:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -100%; }
-          &:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 0%; }
-          
-          &:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
-          &:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
-          &:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
-          &:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
-          &:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
-          &:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) { box-shadow: 0px 0px 0px 5px rgba(0,0,255,0.5); }
-      }
+    width: 100vw;
+    height: 100vh;
+    position: relative;
   }
   
-  .carousel__slides {
-      position: relative;
-      z-index: 1;
-      padding: 0;
-      margin: 0;
-      overflow: hidden;
-      white-space: nowrap;
-      box-sizing: border-box;
-      display: flex;
+  .carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
   
-  .carousel__slide {
-      position: relative;
-      display: block;
-      flex: 1 0 100%;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      transition: all 300ms ease-out;
-      box-sizing: border-box;
-      white-space: normal;
-      
-      figure {
-          display: grid;
-          grid-template-columns: 4fr 1fr;
-          margin: 0;
-          background-color: white;
-          border-top-left-radius: 2rem;
-          border-top-right-radius: 2rem;
-          overflow: hidden;
-      }
-      
-      div {
-          @include aspect-ratio(3, 2);
-          width: 100%;
-      }
-      
-      img {
-          display: block;
-          flex: 1 1 auto;
-          object-fit: cover;
-      }
-      
-      figcaption {
-          align-self: flex-end;
-          padding: 20px 20px 0 20px;
-          flex: 0 0 auto;
-          width: 25%;
-          min-width: 150px;
-      }
-      
-      .credit {
-          margin-top: 1rem;
-          color: rgba(0, 0, 0, 0.5);
-          display: block;        
-      }
-      
-      &.scrollable {
-          overflow-y: scroll;
-      }
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
   }
   
-  .carousel__thumbnails {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      
-      margin: 0 -10px;
-      
-      .carousel__slides + & {
-          margin-top: 20px;
-      }
-      
-      li {        
-          flex: 1 1 auto;
-          max-width: calc((100% / 6) - 20px);  
-          margin: 0 10px;
-          transition: all 300ms ease-in-out;
-      }
-      
-      label {
-          display: block;
-          @include aspect-ratio(1,1);
-          
-                    
-          &:hover,
-          &:focus {
-              cursor: pointer;
-              
-              img {
-                  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.25);
-                  transition: all 300ms ease-in-out;
-              }
-          }
-      }
-      
-      img {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-      }
+  .slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+  }
+  
+  .carousel-button:focus {
+    outline: 1px solid black;
+  }
+  
+  .carousel-button.prev {
+    left: 1rem;
+  }
+  
+  .carousel-button.next {
+    right: 1rem;
   }
