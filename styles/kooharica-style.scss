@@ -5,6 +5,7 @@
     object-fit: cover;
     position:absolute;
     top:0;
+    z-index: -50;
 }
 .first{
     padding-left: 10rem;
@@ -25,6 +26,25 @@
       color:#000040;
     }
   }
+
+  .welcome-section{
+    display:inline-block;
+    position: relative;
+    margin:0 auto;
+    width:30%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-100%);
+    background:rgba(255,255,255, 0.8);
+    border-radius: 1.563rem 1.563rem 0 0;
+    vertical-align: top;
+    z-index: 6;
+  }
+  .recipe-name{
+    position:relative;
+    z-index: 6;
+  }
+
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -39,7 +59,8 @@
     height: 60%;
     position: absolute;
     left:50%;
-    transform: translate(-50%, 0);
+    top: 50%;
+    transform: translate(-50%, -50%);
 
   }
   
@@ -51,6 +72,8 @@
   
   .slide {
     position: absolute;
+    border-radius: 1.563rem;
+    overflow: hidden;
     inset: 0;
     opacity: 0;
     transition: 200ms opacity ease-in-out;
@@ -103,3 +126,15 @@
   .carousel-button.next {
     right: 1rem;
   }
+  @media (max-width: 700px){
+    .welcome-section{
+      position: relative;
+      margin:0 auto;
+      width:90%;
+      text-align: center;
+      background:rgba(255,255,255, 0.7);
+      opacity:0.8;
+      border-radius: 1.563rem;
+      z-index: 6;
+  }
+}

@@ -7,7 +7,7 @@
 @font-face {
   font-family: "CabinSketch";
   src: url(/fonts/cabinsketch/cabinsketch-regular-webfont.woff2) format(woff2);
-  src: url(/fonts/cabinsketch/cabinsketch-bold-webfont.woff2) format(woff2);
+  src: url(/fonts/cabinsketch/cabinsketch-bold-webfont.woff) format(woff);
 }
 html, body {
   margin: 0;
@@ -27,7 +27,7 @@ html, body {
   justify-content: space-between;
   height: 3.125rem;
   padding: 1em;
-  z-index: 99999;
+  z-index: 20;
 }
 .wrap a {
   color: #000040;
