@@ -1,4 +1,4 @@
-/* let dataArray=[];
+let dataArray=[];
 const carouselArray=[];
      
 async function getResponse(){
@@ -16,14 +16,14 @@ async function getResponse(){
 };
 const promise=getResponse();
 promise.then((data)=>{
-    for(let i=0;i<=data.length-1;i++){
-    dataArray.push(data[i]);
-    }}
-  ) 
+    for(let i in data){
+      dataArray.push(data[i]);
+    }
+  })
 
 async function randomCarouselNumberGen(){
   await promise;
-  if(carouselArray.length<=5){
+  if(carouselArray.length<=2){
     const rndNum=Math.floor(Math.random()*dataArray.length);
     if(!carouselArray.includes(rndNum)&&rndNum>=0){
     carouselArray.push(rndNum);
@@ -31,25 +31,26 @@ async function randomCarouselNumberGen(){
     randomCarouselNumberGen();
     }
   }     
-randomCarouselNumberGen();
+
    
 console.log(dataArray);  
 console.log(carouselArray);  
 
 
-let data=JSON.parse(dataArray);
-console.log(data);
-let frImg=document.querySelectorAll(".main-car-img");
-frImg.forEach((element) =>{   
-  console.log(dataArray);
-    element.setAttribute("src",dataArray[carouselArray[j]].imageURL);
-    j++;
-});
- */
 const welcomesecT=document.querySelector(".welcome-section");
 const crsl=document.querySelector(".carousel");
 crsl.prepend(welcomesecT);
 
+
+/* const carouselImgs=document.querySelectorAll(".carousel-img");
+console.log(carouselImgs)
+async function imageNnameGenerator(){
+  await randomCarouselNumberGen();
+  let j=0;
+  for(let bag of carouselImgs){
+    bag.setAttribute("src", dataArray[carouselArray[i]].imageURL)
+  }
+} */
 
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
