@@ -30,8 +30,14 @@ async function randomCarouselNumberGen(){
     }
     randomCarouselNumberGen();
     }
-  }     
+  }
+  randomCarouselNumberGen();     
 
+  async function getarraypos(){
+    await promise;
+    console.log(dataArray[1].name);
+  }
+  getarraypos();
    
 console.log(dataArray);  
 console.log(carouselArray);  
@@ -42,15 +48,17 @@ const crsl=document.querySelector(".carousel");
 crsl.prepend(welcomesecT);
 
 
-/* const carouselImgs=document.querySelectorAll(".carousel-img");
+const carouselImgs=document.querySelectorAll(".carousel-img");
 console.log(carouselImgs)
 async function imageNnameGenerator(){
   await randomCarouselNumberGen();
   let j=0;
   for(let bag of carouselImgs){
-    bag.setAttribute("src", dataArray[carouselArray[i]].imageURL)
+    bag.setAttribute("src", dataArray[carouselArray[j]].imageURL)
+    j++;
   }
-} */
+}
+imageNnameGenerator();
 
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
