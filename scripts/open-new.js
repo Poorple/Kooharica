@@ -24,6 +24,7 @@ fetchJSONinstructions
                 const myH3b = document.createElement('h3');
                 const mySteps = document.createElement('ol');
                 const myIngredients=document.createElement("ul");
+                const printButton=document.createElement("button");
 
                 for(let i=0;i<=post.ingredients.length-1;i++){
                     let ingredientsliElem=document.createElement("li");
@@ -35,9 +36,12 @@ fetchJSONinstructions
                     stepsliElem.textContent=post.steps[i];
                     mySteps.appendChild(stepsliElem);
                 }
+                const printUTF=String.fromCodePoint(0x2399);
+
                 myH2.textContent=post.name;
                 myH3a.textContent="Ingredients";
                 myH3b.textContent="Preparation";
+                printButton.textContent=printUTF+" Print";
 
                 let sum=0;
                 for(let i=0;i<=post.timers.length-1;i++){
@@ -54,9 +58,14 @@ fetchJSONinstructions
                 sectInstructions.appendChild(myIngredients);
                 sectInstructions.appendChild(myH3b);
                 sectInstructions.appendChild(mySteps);
+                sectInstructions.appendChild(printButton);
 
                 secT.appendChild(myArticle);
                 secT.appendChild(sectInstructions);
+
+                printButton.addEventListener("click", ()=>{
+                    print(".cal");
+                })
             }
         })
     })
