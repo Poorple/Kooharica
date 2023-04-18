@@ -1,6 +1,6 @@
 let dataArray=[];
 const carouselArray=[];
-     
+/* GET JSON */     
 async function getResponse(){
   try{
     const response=await fetch("/json/recipes.json");
@@ -20,7 +20,7 @@ promise.then((data)=>{
       dataArray.push(data[i]);
     }
   })
-
+/* RANDOM NUMBER GENERATOR FOR RANDOM RECIPES DIPLAYED */
 async function randomCarouselNumberGen(){
   await promise;
   if(carouselArray.length<=2){
@@ -32,12 +32,6 @@ async function randomCarouselNumberGen(){
     }
   }
   randomCarouselNumberGen();     
-
-  async function getarraypos(){
-    await promise;
-    console.log(dataArray[1].name);
-  }
-  getarraypos();
    
 console.log(dataArray);  
 console.log(carouselArray);  
@@ -47,7 +41,8 @@ const welcomesecT=document.querySelector(".welcome-section");
 const crsl=document.querySelector(".carousel");
 crsl.prepend(welcomesecT);
 
-
+/* APPLY URL TO CAROUSEL SLIDE */
+const imageName=[]
 const carouselImgs=document.querySelectorAll(".carousel-img");
 console.log(carouselImgs)
 async function imageNnameGenerator(){
@@ -55,10 +50,25 @@ async function imageNnameGenerator(){
   let j=0;
   for(let bag of carouselImgs){
     bag.setAttribute("src", dataArray[carouselArray[j]].imageURL)
+    imageName.push(dataArray[carouselArray[j]].name)
     j++;
   }
 }
 imageNnameGenerator();
+
+/* GIVE RECIPE NAME TO CAROUSEL SLIDE */
+const carouselParagraphSelector=document.querySelectorAll(".recipe-name");
+async function carouselRecipeNameGen(){
+  await imageNnameGenerator();
+  let n=0;
+  for(let slidePara of carouselParagraphSelector){
+    slidePara.textContent=imageName[n];
+    n++;
+  }
+}
+carouselRecipeNameGen();
+console.log(carouselParagraphSelector);
+
 
 const buttons = document.querySelectorAll("[data-carousel-button]");
 

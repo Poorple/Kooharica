@@ -35,7 +35,8 @@
   display: inline-block;
   position: relative;
   margin: 0 auto;
-  width: 30%;
+  width: 45%;
+  font-size: 1rem;
   text-align: center;
   left: 50%;
   transform: translate(-50%, -100%);
@@ -46,9 +47,12 @@
 }
 
 .recipe-name {
+  font-size: 1.5rem;
   position: absolute;
-  width: 20%;
-  height: 5%;
+  width: -moz-fit-content;
+  width: fit-content;
+  block-size: -moz-fit-content;
+  block-size: fit-content;
   z-index: 6;
   text-align: center;
   left: 50%;
@@ -67,7 +71,7 @@ body {
 
 .carousel {
   display: block;
-  width: 80%;
+  width: 60%;
   height: 60%;
   position: absolute;
   left: 50%;
@@ -150,5 +154,14 @@ body {
     opacity: 0.8;
     border-radius: 1.563rem 1.563rem 0 0;
     z-index: 6;
+  }
+  .carousel {
+    display: block;
+    width: 90%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }/*# sourceMappingURL=kooharica-style.css.map */
