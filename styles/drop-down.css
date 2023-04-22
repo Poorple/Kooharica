@@ -9,6 +9,11 @@
   src: url(/fonts/cabinsketch/cabinsketch-regular-webfont.woff2) format(woff2);
   src: url(/fonts/cabinsketch/cabinsketch-bold-webfont.woff) format(woff);
 }
+@font-face {
+  font-family: "Milkshake";
+  src: url(/fonts/milkshake/milkshake_400-webfont.woff2) format(woff2);
+  src: url(/fonts/milkshake/milkshake_400-webfont.woff) format(woff);
+}
 html, body {
   margin: 0;
   height: 100%;
@@ -16,6 +21,10 @@ html, body {
 
 * {
   box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Milkshake";
 }
 
 .wrap {

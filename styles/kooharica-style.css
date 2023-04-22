@@ -48,6 +48,7 @@
 }
 
 .recipe-name {
+  font-family: "Milkshake";
   font-size: 1.5rem;
   position: absolute;
   width: -moz-fit-content;
@@ -59,7 +60,8 @@
   left: 50%;
   transform: translate(-50%, 0);
   bottom: 0;
-  background: rgb(205, 26, 24);
+  border-radius: 0.5rem;
+  background: white;
 }
 
 *, *::before, *::after {
@@ -104,6 +106,7 @@ body {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  cursor: pointer;
 }
 
 .slide[data-active] {
@@ -114,7 +117,7 @@ body {
 
 .carousel-button {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   background: none;
   border: none;
   font-size: 4rem;

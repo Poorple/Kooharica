@@ -7,8 +7,7 @@
     text-align: center;
     img{
         height:37.5rem;
-        width:50rem;
-        
+        width:50rem;        
 }
 }
 article{
@@ -20,6 +19,9 @@ article{
        width: 100%;
     }
     cursor: pointer;
+    grid-row: 6fr 1fr;
+    object-position: center;
+    object-fit: contain;
 }
 @media (max-width: 800px){
     .cal{

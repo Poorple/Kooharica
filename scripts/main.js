@@ -32,9 +32,13 @@ async function randomCarouselNumberGen(){
     }
   }
   randomCarouselNumberGen();     
-   
-console.log(dataArray);  
-console.log(carouselArray);  
+ 
+ const carouselImgSelector=document.querySelector(".carousel-img");
+ const carouselPSelector=document.querySelector(".recipe-name");
+ carouselImgSelector.addEventListener("click",()=>{
+  sessionStorage.setItem("key",carouselPSelector.textContent)
+  window.location="/recipe-directions.html"
+ })
 
 
 const welcomesecT=document.querySelector(".welcome-section");
@@ -44,7 +48,6 @@ crsl.prepend(welcomesecT);
 /* APPLY URL TO CAROUSEL SLIDE */
 const imageName=[]
 const carouselImgs=document.querySelectorAll(".carousel-img");
-console.log(carouselImgs)
 async function imageNnameGenerator(){
   await randomCarouselNumberGen();
   let j=0;
@@ -67,9 +70,8 @@ async function carouselRecipeNameGen(){
   }
 }
 carouselRecipeNameGen();
-console.log(carouselParagraphSelector);
 
-
+/* CAROUSEL BUTTON FUNCTIONALITY */
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
 buttons.forEach(button => {
