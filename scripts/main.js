@@ -33,13 +33,6 @@ async function randomCarouselNumberGen(){
   }
   randomCarouselNumberGen();     
  
- const carouselImgSelector=document.querySelector(".carousel-img");
- const carouselPSelector=document.querySelector(".recipe-name");
- carouselImgSelector.addEventListener("click",()=>{
-  sessionStorage.setItem("key",carouselPSelector.textContent)
-  window.location="/recipe-directions.html"
- })
-
 
 const welcomesecT=document.querySelector(".welcome-section");
 const crsl=document.querySelector(".carousel");
@@ -80,7 +73,7 @@ buttons.forEach(button => {
     const slides = button
       .closest("[data-carousel]")
       .querySelector("[data-slides]")
-
+      
     const activeSlide = slides.querySelector("[data-active]");
     let newIndex = [...slides.children].indexOf(activeSlide) + offset;
     if (newIndex < 0) newIndex = slides.children.length - 1;
@@ -88,5 +81,14 @@ buttons.forEach(button => {
 
     slides.children[newIndex].dataset.active = true;
     delete activeSlide.dataset.active;
-  })
+    sendRecipe();
 })
+})
+function sendRecipe(){
+  const activeImg=document.querySelector("[data-active]")
+const carouselPSelector=document.querySelector("[data-active] p");
+activeImg.addEventListener("click",()=>{
+  sessionStorage.setItem("key",carouselPSelector.textContent)
+  window.location="/recipe-directions.html"
+})}
+sendRecipe();
