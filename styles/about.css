@@ -15,4 +15,10 @@
   text-align: center;
   border-radius: 25px;
   font-size: 1.3rem;
+}
+
+@media (max-width: 700px) {
+  .note {
+    width: 90%;
+  }
 }/*# sourceMappingURL=about.css.map */
