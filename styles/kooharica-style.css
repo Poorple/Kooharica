@@ -20,7 +20,7 @@
   transition: transform 0.2s, background-color 0.2s, color 0.2s;
 }
 .wrap a {
-  color: white;
+  color: black;
 }
 
 .wrap:hover {
@@ -154,11 +154,12 @@ body {
     position: relative;
     margin: 0 auto;
     width: 85%;
+    margin-top: 0.5rem;
     text-align: center;
     background: rgba(255, 255, 255, 0.7);
     opacity: 0.8;
     border-radius: 1.563rem 1.563rem 0 0;
-    z-index: 6;
+    z-index: -6;
   }
   .carousel {
     display: block;
@@ -168,5 +169,9 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+  .wrap {
+    background: white;
+    color: black;
   }
 }/*# sourceMappingURL=kooharica-style.css.map */

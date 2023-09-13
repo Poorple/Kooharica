@@ -1,6 +1,7 @@
 .cal {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2%;
   padding: 1.5rem;
   margin: 0 auto;
 }
@@ -19,10 +20,17 @@
   height: auto;
 }
 .cal section {
+  text-align: center;
   position: relative;
   padding: 0.8rem;
   border-radius: 1.563rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cal section ul li {
+  list-style-position: inside;
+}
+.cal section ol li {
+  list-style-position: inside;
 }
 .cal button {
   position: absolute;
