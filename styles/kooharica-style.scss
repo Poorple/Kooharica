@@ -55,7 +55,8 @@
     bottom: 0;
     border-radius: 0.5rem;
     background: #89cff0;
-    padding:0.5%
+    padding:0.5%;
+    opacity:0.8;
     
   }
 
@@ -164,5 +165,13 @@
   .wrap{
     background: white;
     color:black;
+  }
+  .recipe-name{
+    width: 80%;
+  }
+}
+@media (min-width:700px) and (max-width:1200px){
+  .welcome-section{
+    visibility: hidden;
   }
 }

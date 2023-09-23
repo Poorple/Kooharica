@@ -1,3 +1,12 @@
+@keyframes hoverOn{
+    from{
+     box-shadow: 0 30px 40px rgba(0,0,0,0)}
+    to{box-shadow: 0 30px 40px rgba(0,0,0,.2)}
+}
+@keyframes reverseHover{
+    from{box-shadow: 0 30px 40px rgba(0,0,0,.2)}
+    to{box-shadow: 0 30px 40px rgba(0,0,0,0)}
+}
 .cal{
     padding:1.5rem;
     display:grid;
@@ -11,8 +20,9 @@
 }
 }
 article{
+    animation-name:reverseHover;
+    animation-duration:0.5s;
     border-radius: 20px;
-    box-shadow: rgba(17, 17, 26, 0.2) 0px 1px 0px, rgba(17, 17, 26, 0.2) 0px 0px 8px;
     overflow:hidden;
     a{
        display: inline-block;
@@ -22,6 +32,11 @@ article{
     grid-row: 6fr 1fr;
     object-position: center;
     object-fit: contain;
+    &:hover{
+        animation-name: hoverOn;
+        animation-fill-mode: forwards;        
+        animation-duration:0.5s;
+    }
 }
 @media (max-width: 800px){
     .cal{
